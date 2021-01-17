@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="276dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logowhite" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="408dp"
+        android:layout_height="669dp"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/bottomNavigation"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="409dp"
+
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        app:itemBackground="?selectableItemBackgroundBorderless"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>
